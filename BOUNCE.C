@@ -67,10 +67,7 @@ void main(){
 		fx=(rand()%3)*6;
 		fy=(rand()%3)*5;
 		dis = distance(c1.x, c1.y, c2.x, c2.y);
-		if(dis<(c1.r+c2.r)){
-			c1.xdirn=-1;
-			c2.xdirn=1;
-		}
+		if(dis<(c1.r+c2.r)){c1.xdirn=-1; c2.xdirn=1;}
 		if(c1.x>maxx||c1.x<40){c1.xdirn*=-1;}
 		if(c2.x>maxx||c2.x<40){c2.xdirn*=-1;}
 		if(c1.y>maxy||c1.y<40){c1.ydirn*=-1;}
